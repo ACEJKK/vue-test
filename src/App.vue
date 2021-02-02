@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <img alt="My logo" src="./assets/我的网络头像.jpeg">
-    <!--<HelloWorld msg="Welcome to My Websites"/>-->
-    <information msg="Welcome to my Websites"/>
+    <Information msg="Welcome to my Websites"/>
+    <HelloWorld msg="Welcome to My Websites"/>
   </div>
 </template>
 
@@ -11,12 +11,14 @@
 
 
 <script>
-import information from './components/information.vue'
+import Information from './components/Information'
+import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
-    information
+    Information,
+    HelloWorld
   }
 }
 </script>
